@@ -1,0 +1,14 @@
+# Balanced 5-Class CAPTCHA Detection Dataset
+
+path: 
+train: images
+val: images
+
+# Classes
+nc: 5
+names:
+  0: captcha_area
+  1: cell
+  2: reload_button
+  3: submit_button
+  4: robot_checkbox

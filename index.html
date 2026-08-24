@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="CAPTCHAs in the Agentic Era: Solvers That Learn from Every Encounter">
+  <meta name="keywords" content="CAPTCHA, VLM, YOLO, GUI Agents, Computer Vision">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAPTCHAs in the Agentic Era: Solvers That Learn from Every Encounter</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <span class="icon">
+        <i class="fas fa-home"></i>
+      </span>
+      <span class="has-text-weight-bold">CAPTCHAs in the Agentic Era</span>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="#abstract">
+        Abstract
+      </a>
+      <a class="navbar-item" href="#method">
+        Method
+      </a>
+      <a class="navbar-item" href="#results">
+        Results
+      </a>
+      <a class="navbar-item" href="#distillation">
+        Distillation
+      </a>
+      <a class="navbar-item" href="#adversarial">
+        Adversarial Robustness
+      </a>
+      <a class="navbar-item" href="#live">
+        Live Evaluation
+      </a>
+      <a class="navbar-item" href="#BibTeX">
+        BibTeX
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-light" href="https://github.com/oscilloscope/captchas-agentic-era" target="_blank">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CAPTCHAs in the Agentic Era: Solvers That Learn from Every Encounter</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="mailto:salmano21@itu.edu.tr">Oguzhan Salman</a>,
+            </span>
+            <span class="author-block">
+              <a href="mailto:kemalbicakci@itu.edu.tr">Kemal Bicakci</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Istanbul Technical University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <span class="link-block">
+                <a href="https://github.com/oscilloscope/captchas-agentic-era"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="hero-body" style="max-width: none;">
+      <h2 class="title is-3 has-text-centered">Live Demonstrations</h2>
+      <h2 class="subtitle has-text-centered">
+        Real-time demonstrations: from YOLO-based UI detection to puzzle solving without DOM access.
+      </h2>
+
+      <div id="demo-carousel" class="carousel">
+        <div class="item item-high">
+          <div class="demo-wrapper">
+            <div class="demo-container">
+              <video id="high-video" autoplay muted loop playsinline controls height="100%" data-duration="1.6" preload="auto">
+                <source src="./demos/high.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="timer-legend">
+              <div class="timer-content">
+                <div class="timer-label">Real-Time UI Detection Highlights</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item item-yolo">
+          <div class="demo-wrapper">
+            <div class="demo-container">
+              <video id="yolo-video" autoplay muted loop playsinline controls height="100%" data-duration="8.2" preload="metadata">
+                <source src="./demos/yolo_solver.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="timer-legend">
+              <div class="timer-content">
+                <div class="timer-label">YOLO Solver</div>
+                <div class="timer-value" id="yolo-timer">0.0s</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item item-llm">
+          <div class="demo-wrapper">
+            <div class="demo-container">
+              <video id="llm-video" autoplay muted loop playsinline controls height="100%" data-duration="18.7" preload="metadata">
+                <source src="./demos/llm_solver.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="timer-legend">
+              <div class="timer-content">
+                <div class="timer-label">GUI Agent based Solver</div>
+                <div class="timer-value" id="llm-timer">0.0s</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item item-hybrid">
+          <div class="demo-wrapper">
+            <div class="demo-container">
+              <video id="hybrid-video" autoplay muted loop playsinline controls height="100%" data-duration="104.5" preload="metadata">
+                <source src="./demos/long_solver.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="timer-legend">
+              <div class="timer-content">
+                <div class="timer-label">Hybrid Model on Tor Browser - Highest Risk Score</div>
+                <div class="timer-value" id="hybrid-timer">0.0s</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="has-text-centered is-size-7" style="margin-top: 1rem; color: #888;">
+        Videos show real-time solving purely from screenshots (No dom access needed) without speedup.<br>
+        Note: Even with correct solutions, CAPTCHAs may be presented multiple rounds if risk score is high as illustrated on Tor Browser.
+      </p>
+  </div>
+</section>
+
+
+<section class="section" id="abstract">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+            Vision-language models (VLMs) can solve visual CAPTCHAs without task-specific training, but the agents built on them approach every challenge from scratch. For such an agent, the hundredth instance of a familiar puzzle costs as much time and compute as the first. Specialized detectors invert the trade-off, answering in milliseconds but only for categories they were trained on. Neither improves with exposure.
+            <br/><br/>
+            We study what changes when a solver improves with use. Our system pairs a fine-tuned YOLOv8 detector with an open-weight VLM behind a confidence-based router, and runs entirely from screenshots and operating-system input events, with no browser automation or DOM access. It reaches 85.4% overall and 84.2% macro accuracy across 16 classes, exceeding either component alone. Every answer VLM produces also serves as a training label, so the detector absorbs categories it was never trained for, typically after one or two encounters and without human annotation. The same loop also repairs it. A CAPTCHA operator can perturb images against the publicly released detector and drive its accuracy to 0%, but the perturbations leave VLM untouched, and its labels let the detector recover. Under a year-long simulated arms race in which the CAPTCHA operator re-crafts its perturbations each month, the solver recovers every round, and a cheap ~70%-accurate open-weight teacher hardens it as effectively as a perfect oracle. Visual CAPTCHA defenses that assume a failing bot stays failing therefore understate how quickly an adaptive solver returns.
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">reCAPTCHA v2 Challenge Types</h2>
+
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content">
+              <img src="./figs/classification.png" alt="Classification"/>
+              <p class="has-text-centered">
+                <strong>Classification (3x3):</strong> Select entire tiles containing target object
+              </p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <img src="./figs/segmentation.png" alt="Segmentation"/>
+              <p class="has-text-centered">
+                <strong>Segmentation (4x4):</strong> Click squares overlapping target object
+              </p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="content">
+              <img src="./figs/dynamic_captcha.png" alt="Dynamic"/>
+              <p class="has-text-centered">
+                <strong>Dynamic:</strong> Iteratively select until none remain
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="columns is-centered" id="method">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+
+        <h3 class="title is-4">Architecture Overview</h3>
+        <div class="content has-text-justified">
+          <p>
+            The entire pipeline operates at the OS level: input is obtained by capturing screenshots via system APIs, and output is delivered by sending mouse and keyboard events to absolute screen coordinates via PyAutoGUI. The browser is treated as a visual surface and is never accessed programmatically &mdash; no Selenium, no Playwright, no DOM. Our hybrid architecture combines three key components:
+          </p>
+          <ol>
+            <li><strong>Fine-tuned YOLOv8 Detector:</strong> Specialized for CAPTCHA UI elements (captcha area, cells, checkbox, reload/submit buttons), fine-tuned from OmniParser's pretrained icon detection model on synthetically generated training samples. OCR then extracts the instruction text to identify the target class and puzzle type.</li>
+            <li><strong>Finite-State Controller:</strong> Coordinates detection, solving, verification and recovery. Handles both static puzzles (solve once, then verify) and dynamic puzzles, where selected tiles refresh with new images after each click and the grid must be iteratively re-analysed until no target objects remain.</li>
+            <li><strong>Hybrid Solving Engine:</strong> Routes each image independently rather than statically assigning classes to models. Targets outside YOLO's vocabulary (identified via OCR) go straight to VLM; for supported classes YOLO runs first, and its top-1 softmax confidence determines whether to trust its prediction or fall back to VLM at a threshold of <strong>&tau;&nbsp;=&nbsp;0.70</strong>.</li>
+          </ol>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <img src="./figs/numbered_flow_diagram.png" alt="System Architecture" style="width: 100%;"/>
+            <p class="has-text-centered" style="margin-top: 1rem;">
+              Complete system architecture showing end-to-end CAPTCHA solving pipeline.
+              <strong>Step 1:</strong> Screenshot capture and YOLOv8 UI detection.
+              <strong>Step 2:</strong> OCR extracts target object and determines puzzle type.
+              <strong>Step 3:</strong> Confidence-based routing to YOLO or VLM (per image, &tau;&nbsp;=&nbsp;0.70).
+              <strong>Step 4:</strong> Model inference returns predictions.
+              <strong>Step 5:</strong> FSM maps cells to absolute screen coordinates, sends OS-level events, then verifies, reloads on failure, and handles dynamic refresh.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="results">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+
+        <!-- Performance Metrics. -->
+        <h3 class="title is-4">Classification Performance</h3>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate on 15,172 held-out samples spanning 16 object classes. Three of the classes (Boat, Taxi, Tractor) are not supported by the published YOLO classifier. Our hybrid cascade outperforms both YOLO-only and VLM-only solutions.
+          </p>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="notification is-success is-light">
+              <p class="title is-1 has-text-centered">85.4%</p>
+              <p class="subtitle is-5 has-text-centered">Overall Accuracy<br/><span class="has-text-success">+10.0pp over YOLO-only baseline</span></p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="notification is-success is-light">
+              <p class="title is-1 has-text-centered">84.2%</p>
+              <p class="subtitle is-5 has-text-centered">Macro-Averaged Accuracy<br/><span class="has-text-success">+24.2pp over YOLO-only baseline</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Classification metrics table -->
+        <h3 class="title is-4">Classification Accuracy Comparison</h3>
+        <div class="content">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>YOLO</th>
+                <th>VLM (GUI Agent)</th>
+                <th>Hybrid</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Overall Acc. (16 classes)</td>
+                <td>75.48%</td>
+                <td>80.52%</td>
+                <td><strong>85.44%</strong></td>
+              </tr>
+              <tr>
+                <td>Overall Acc. (12 classes*)</td>
+                <td>83.14%</td>
+                <td>78.27%</td>
+                <td><strong>84.98%</strong></td>
+              </tr>
+              <tr>
+                <td>Macro Acc. (16 classes)</td>
+                <td>59.99%</td>
+                <td>81.01%</td>
+                <td><strong>84.17%</strong></td>
+              </tr>
+              <tr>
+                <td>Macro Acc. (12 classes*)</td>
+                <td>75.21%</td>
+                <td>76.61%</td>
+                <td><strong>81.60%</strong></td>
+              </tr>
+              <tr>
+                <td>VLM calls</td>
+                <td>0%</td>
+                <td>100%</td>
+                <td>30.0%</td>
+              </tr>
+              <tr>
+                <td>Avg. latency (per cell)</td>
+                <td>4 ms</td>
+                <td>225 ms</td>
+                <td>71 ms</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4" style="font-size: 0.85em;">*Excludes four separately collected classes (Boat, Stairs, Taxi, Tractor).</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <h3 class="title is-4">Confusion Matrix Comparison</h3>
+        <div class="columns is-centered">
+          <div class="column">
+            <img src="./figs/yolo_confusion_matrix_v10.png" alt="YOLO Confusion Matrix"/>
+            <p class="has-text-centered"><strong>YOLO Classifier</strong><br/>75.5% overall, 60.0% macro accuracy</p>
+          </div>
+          <div class="column">
+            <img src="./figs/vlm_confusion_matrix_v10.png" alt="VLM Confusion Matrix"/>
+            <p class="has-text-centered"><strong>VLM GUI Agent</strong><br/>80.5% overall, 81.0% macro accuracy</p>
+          </div>
+        </div>
+
+        <h3 class="title is-4">Segmentation Performance</h3>
+        <div class="content has-text-justified">
+          <p>
+            For 4x4 segmentation puzzles, the hybrid combines YOLOv8x-Mask's geometric precision on supported classes with VLM's coverage on rare or unseen categories (Crosswalk, Stairs, Taxi).
+          </p>
+        </div>
+        <div class="content">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Accuracy</th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>F1-Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>YOLOv8x-Mask</td>
+                <td>86.7%</td>
+                <td>87.2%</td>
+                <td>76.3%</td>
+                <td>0.814</td>
+              </tr>
+              <tr>
+                <td>VLM (BBox)</td>
+                <td>81.6%</td>
+                <td>73.9%</td>
+                <td>80.1%</td>
+                <td>0.769</td>
+              </tr>
+              <tr>
+                <td><strong>Hybrid</strong></td>
+                <td><strong>88.6%</strong></td>
+                <td><strong>85.6%</strong></td>
+                <td><strong>84.3%</strong></td>
+                <td><strong>0.850</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="distillation">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Teacher-Student Distillation</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            The teacher-student paradigm requires that the VLM clearly outperform a fine-tuned YOLO baseline. That holds for classification (VLM macro recall 81.0% vs YOLO's 60.0%) but not for segmentation, where VLM (F1=0.769) falls below even the smaller YOLOv8m (F1=0.811), so the experiments below &mdash; distillation and adversarial recovery &mdash; focus on classification, where VLM-as-teacher is decisive.
+          </p>
+          <p>
+            Since VLM achieves high recall on classes where YOLO fails (Boat, Taxi, Tractor), its predictions can serve as labeled training data to fine-tune YOLO, converting expensive VLM reasoning into millisecond-scale reflexes. We use Experience Replay to prevent catastrophic forgetting: for each new class with N training images, we include N randomly sampled exemplars per existing class.
+          </p>
+        </div>
+
+        <h3 class="title is-4">Learning Curves</h3>
+        <div class="content has-text-justified">
+          <p>New-class recall as a function of training images (N) for each unsupported class, averaged over 10 seeds. Dashed lines indicate approximate puzzle equivalents.</p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <img src="./figs/taxi_acc_forgetting.png" alt="Taxi Learning Curve"/>
+            <p class="has-text-centered"><strong>Taxi:</strong> 96% recall at N=10 (~2 puzzles)</p>
+          </div>
+          <div class="column">
+            <img src="./figs/tractor_acc_forgetting.png" alt="Tractor Learning Curve"/>
+            <p class="has-text-centered"><strong>Tractor:</strong> 88% recall at N=15 (~3 puzzles)</p>
+          </div>
+          <div class="column">
+            <img src="./figs/boat_acc_forgetting.png" alt="Boat Learning Curve"/>
+            <p class="has-text-centered"><strong>Boat:</strong> 48% recall at N=6 (~1 puzzle)</p>
+          </div>
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            Taxi images are almost exclusively yellow sedans -- visually consistent, easy to learn from few examples. Tractor images are more diverse but share a coherent structure. Boat images span wildly different visual concepts (rowboats, yachts, sailboats), making the class hard to learn from only 6 training samples.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="adversarial">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Adversarial Robustness and Autonomous Recovery</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Throughout this section, the <strong><em>solver</em></strong> is our system, which attempts to pass CAPTCHA challenges automatically, and the <strong><em>defender</em></strong> is the CAPTCHA operator seeking to block such automation. Note that the roles are inverted relative to the usual convention: here it is the defender who crafts adversarial perturbations, and the solver that must withstand and recover from them.
+          </p>
+          <p>
+            The same VLM-as-teacher mechanism extends naturally to adversarial robustness: when PGD attacks defeat YOLO, VLM &mdash; largely unaffected by perturbations crafted against YOLO's gradients &mdash; can relabel the adversarial images for retraining. We test whether this enables autonomous recovery, and how the system holds up under iterative grey-box escalation where the defender re-crafts attacks each round.
+          </p>
+          <p>
+            We generate untargeted PGD attacks (epsilon=4/255, 10 steps) against the YOLO classifier.
+          </p>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="notification is-danger is-light">
+              <p class="title is-2 has-text-centered">83.1% &rarr; 0%</p>
+              <p class="subtitle is-6 has-text-centered">YOLO accuracy after PGD attack<br/>(<strong>100% misclassification</strong>)</p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="notification is-info is-light">
+              <p class="title is-2 has-text-centered">78.7% &rarr; 75.0%</p>
+              <p class="subtitle is-6 has-text-centered">VLM accuracy on same adversarial images<br/>(<strong>only 3.7pp drop</strong>)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            The PGD attack completely defeats YOLO but barely affects VLM, since perturbations optimized against YOLO's gradients don't transfer to the architecturally distinct VLM. This means VLM can still label adversarial images correctly, enabling autonomous recovery through retraining.
+          </p>
+        </div>
+
+        <h3 class="title is-4">Sample Efficiency and Grey-Box Escalation</h3>
+        <div class="content has-text-justified">
+          <p>
+            To isolate the effect of label noise on recovery quality, we retrain YOLO on adversarial samples using two label sources: <strong>VLM predictions</strong> (the realistic deployment scenario, using our Qwen-7B VLM) and <strong>ground-truth (GT) labels</strong> (an upper bound standing in for what an expensive, highly capable model such as GPT-5, Gemini or Claude would approach). Comparing the two reveals the practical cost of imperfect labels &mdash; and, surprisingly, an unexpected benefit under iterative attack.
+          </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <img src="./figs/sample_efficiency_pgd_balanced_v4.png" alt="Sample Efficiency"/>
+            <p class="has-text-centered"><strong>Autonomous Recovery:</strong> Adversarial accuracy vs training samples. VLM labels (red) incur a 6-10pp penalty vs GT (green). Most of the gain arrives within the first ~1,800 samples &mdash; roughly 200 puzzle encounters &mdash; after which returns diminish.</p>
+          </div>
+          <div class="column">
+            <img src="./figs/escalation_greybox_final_v2.png" alt="Grey-Box Escalation"/>
+            <p class="has-text-centered"><strong>Grey-Box Escalation:</strong> Pre-recovery accuracy over 12 monthly rounds for four solver variants, each taught by a perfect oracle or a ~70%-accurate VLM and trained either <em>coupled</em> to the surrogate (same batch order) or <em>independent</em> of it. Either mechanism decorrelates the solver from the surrogate, and all variants recover after retraining.</p>
+          </div>
+        </div>
+
+        <h3 class="title is-4">A Year-Long Arms Race</h3>
+        <div class="content has-text-justified">
+          <p>
+            In practice a defender does not attack once. We simulate 12 rounds, one per month, in which the defender re-crafts attacks against an updated surrogate each round. We vary two factors that could shape the solver's resilience: the <strong>teacher</strong> it learns from, and whether the defender can <strong>reproduce its training</strong>. The defender is assumed to know the solver builds on the published YOLO classifier, so they can replicate its starting point and retraining setup; the one thing they cannot replicate is the order in which the solver shuffles its training batches.
+          </p>
+        </div>
+        <div class="content">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th>Teacher</th>
+                <th>Batch order</th>
+                <th>Pre-recovery</th>
+                <th>Post-recovery</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Perfect (GT)</td>
+                <td>coupled</td>
+                <td>28.4%</td>
+                <td>60.1%</td>
+              </tr>
+              <tr>
+                <td>Perfect (GT)</td>
+                <td>independent</td>
+                <td>52.9%</td>
+                <td>64.2%</td>
+              </tr>
+              <tr>
+                <td>VLM (~70% acc.)</td>
+                <td>coupled</td>
+                <td><strong>58.2%</strong></td>
+                <td>62.3%</td>
+              </tr>
+              <tr>
+                <td>VLM (~70% acc.)</td>
+                <td>independent</td>
+                <td><strong>58.9%</strong></td>
+                <td>62.3%</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4" style="font-size: 0.85em;">Mean pre- and post-recovery accuracy over the 12 monthly rounds. &ldquo;Coupled&rdquo;: the solver shares the surrogate's exact training order, making it a near-clone the defender can attack directly. &ldquo;Independent&rdquo;: the solver shuffles its batches in an order the defender cannot reproduce.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            Each month the defender's fresh attack degrades the solver, in some months cutting its accuracy on the attacked images to nearly zero. Yet once the solver retrains on those images, every variant &mdash; including the coupled perfect-teacher solver, which is nearly identical to the surrogate the defender attacks &mdash; climbs back to 60&ndash;64%. The attack is a temporary setback: the defender can disrupt the solver each month, but cannot prevent it from recovering.
+          </p>
+          <p>
+            What resists a transferred attack is a training trajectory that has decorrelated from the surrogate's, and two mechanisms each achieve this: an independent batch order, or VLM's noisy labels. Trajectory independence alone lifts the perfect-teacher solver from 28.4% to 52.9% (a 24pp gain). The VLM-taught solver reaches 58.2% and is essentially unchanged whether its batch order is coupled or independent (58.9%), because its noisy labels already decorrelate it &mdash; concealing the batch order provides no additional benefit. Measured against the surrogate at the final round, gradient alignment falls from 0.42 (coupled perfect teacher) to 0.07 (independent batch order) to 0.02 (noisy labels at the <em>same</em> batch order).
+          </p>
+          <p>
+            Comparing the two independent-batch-order solvers isolates teacher quality: the perfect teacher yields 52.9% pre-recovery robustness and the noisy VLM 58.9%. The cheap, imperfect teacher not only matches but slightly exceeds the expensive one. What it costs is clean accuracy &mdash; the VLM-taught solver gives up ~2&ndash;6pp there while surrendering no adversarial robustness. For a defender, grey-box knowledge of the training setup is useful only if they can reproduce it exactly, and VLM labeling denies them that for free.
+          </p>
+          <p>
+            Throughout, the VLM path is itself unaffected, holding ~75% accuracy because the perturbations target YOLO. The confidence cascade can therefore route the perturbed cells YOLO misreads to VLM &mdash; provided the gate still fires on them. This is where label smoothing (0.1) earns its place in the training convention: without it, adversarial retraining drives YOLO's softmax to saturation (28% of predictions at exactly 1.0), the &tau;&nbsp;=&nbsp;0.70 gate rarely triggers, and only 4% of attacked cells escalate. With smoothing, the cascade routes 29&ndash;46% of cells to VLM and lifts pre-recovery accuracy by <strong>+11 to +13pp</strong> &mdash; for the VLM-taught solver, from 58.2% to 70.2%.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="live">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Does This Hold Outside the Lab?</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            reCAPTCHA v2 is already broken by prior work, so a solve rate is not the contribution here. What the live runs test is whether the <em>architecture</em> survives outside a static benchmark: whether a screenshot-only solver can operate without the anti-detection scaffolding that browser-automation solvers depend on, whether the cascade's routing economics transfer, and what dynamic puzzles actually cost. We ran the hybrid (&tau;&nbsp;=&nbsp;0.70) against Google's live reCAPTCHA v2 demo over 100 sessions, using the same models, prompts and FSM as the static evaluation.
+          </p>
+        </div>
+
+        <h3 class="title is-4">Operating Without Anti-Detection Scaffolding</h3>
+        <div class="content has-text-justified">
+          <p>
+            Plesner <em>et al.</em> report a 100% session pass rate on the same CAPTCHA family &mdash; but their setup combines VPN rotation, real-user browser cookies and history, and B&eacute;zier-curve mouse trajectories. Without these helpers, their median required challenges per CAPTCHA degrades from 2 to 5 (cookies removed), 7 (B&eacute;zier replaced with straight lines), and 13 (no mouse simulation), and their no-VPN configuration was blocked entirely after 20 runs. They also explicitly skip puzzles whose target class YOLO does not support.
+          </p>
+        </div>
+        <div class="content">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Plesner <em>et al.</em></th>
+                <th>Ours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Interaction layer</td>
+                <td>Selenium-controlled Firefox (DOM)</td>
+                <td><strong>OS-level mouse/keyboard, no DOM</strong></td>
+              </tr>
+              <tr>
+                <td>Network</td>
+                <td>VPN rotation</td>
+                <td><strong>Residential connection</strong></td>
+              </tr>
+              <tr>
+                <td>Browser state</td>
+                <td>Real-user cookies and history</td>
+                <td><strong>Private-mode Chrome</strong></td>
+              </tr>
+              <tr>
+                <td>Cursor</td>
+                <td>B&eacute;zier-curve trajectories</td>
+                <td><strong>Linear paths</strong></td>
+              </tr>
+              <tr>
+                <td>Unsupported classes</td>
+                <td>Skipped</td>
+                <td><strong>All 16 handled via VLM fallback</strong></td>
+              </tr>
+              <tr>
+                <td>Median challenges / session</td>
+                <td>2 (full stack) &rarr; 13 (no mouse sim.)</td>
+                <td><strong>2</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            We match Plesner's full-stack median while operating under conditions that block their setup entirely. Selenium-controlled browsers expose automation fingerprints that anti-bot systems detect &mdash; which is precisely what the additional behavioural infrastructure compensates for. Our screenshot-based approach avoids that class of detection by design, which is what makes the solver droppable into a real GUI agent rather than a standalone script.
+          </p>
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            Across 100 sessions comprising 206 distinct puzzles (140 static, 66 dynamic), all 100 sessions passed. 181 of 206 puzzles were solved on first attempt (87.9%); the 25 failures recovered through reload and retry within the same session. 80 sessions cleared with no reload at all, 18 required one, and 2 required multiple. End-to-end, the median time was 17.1&nbsp;s per puzzle and 35.2&nbsp;s per session &mdash; 21% faster than Halligan's 21.8&nbsp;s median, achieved with a self-hosted Qwen-7B-VL rather than proprietary GPT-4o at $2.40 per 100 puzzles. Under the same single-attempt-per-challenge protocol Halligan reports 68%; our first-attempt rate is 87.9%.
+          </p>
+          <p>
+            Two results matter for the architecture. First, <strong>the cascade's routing transfers</strong>: the aggregate VLM call rate was 37.1%, within 7pp of the 30% observed on the static benchmark. Per-session it ranges from 0% to 75% (std 15.5%), showing the cascade adapting to per-session difficulty &mdash; easy sessions rely entirely on YOLO, hard sessions escalate more to VLM. Second, <strong>dynamic puzzles impose a cost the static evaluation cannot capture</strong>: 66 of the 206 puzzles re-rendered selected tiles after each click, requiring multiple classification rounds per puzzle as the FSM iteratively re-analysed the grid until no targets remained. Static images are classified once with no re-analysis; this iteration is a deployment-only cost, and it is what the finite-state controller exists to absorb.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{salman2026captchas,
+  title  = {CAPTCHAs in the Agentic Era: Solvers That Learn from Every Encounter},
+  author = {Salman, Oguzhan and Bicakci, Kemal},
+  year   = {2026}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p class="has-text-centered">
+            This research is conducted for academic purposes. Please use responsibly.
+          </p>
+          <p class="has-text-centered">
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function forcePlay(video) {
+  if (video) {
+    video.muted = true;
+    video.volume = 0;
+
+    if (video.paused) {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          console.log('Playing:', video.id);
+        }).catch(e => {
+          console.log('Blocked:', video.id, '-', e.message);
+        });
+      }
+    }
+  }
+}
+
+function playAllVideos() {
+  const videoIds = ['high-video', 'yolo-video', 'llm-video', 'hybrid-video'];
+  console.log('Attempting to play all videos...');
+  videoIds.forEach(id => {
+    const video = document.getElementById(id);
+    if (video) {
+      forcePlay(video);
+    }
+  });
+}
+
+// Try to play immediately (even before DOM is fully loaded)
+setTimeout(playAllVideos, 100);
+setTimeout(playAllVideos, 300);
+setTimeout(playAllVideos, 600);
+setTimeout(playAllVideos, 1000);
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Function to setup video with timer
+  function setupVideoWithTimer(videoId, timerId) {
+  const video = document.getElementById(videoId);
+  const timer = document.getElementById(timerId);
+
+  if (video && timer) {
+    // Instead of forcing play immediately, wait for the browser to be ready
+    video.addEventListener('canplay', () => {
+      video.play().catch(e => console.log("Autoplay blocked, waiting for interaction"));
+    }, { once: true });
+
+    video.addEventListener('timeupdate', function() {
+      const currentTime = video.currentTime;
+      timer.textContent = currentTime.toFixed(1) + 's';
+    });
+
+    // Add an error listener to see exactly why it's failing
+    video.addEventListener('error', function() {
+      console.error("Video Error on " + videoId + ": ", video.error);
+    });
+  }
+}
+
+  // Function to setup video without timer
+  function setupVideoOnly(videoId) {
+    const video = document.getElementById(videoId);
+
+    if (video) {
+      // Force play immediately
+      forcePlay(video);
+
+      // Try to play on multiple events
+      video.addEventListener('loadedmetadata', () => forcePlay(video));
+      video.addEventListener('loadeddata', () => forcePlay(video));
+      video.addEventListener('canplay', () => forcePlay(video));
+      video.addEventListener('canplaythrough', () => forcePlay(video));
+
+      // Prevent pause
+      video.addEventListener('pause', function() {
+        setTimeout(() => forcePlay(video), 50);
+      });
+
+      // Aggressive keep-alive
+      setInterval(() => {
+        if (video.paused && !video.ended) {
+          forcePlay(video);
+        }
+      }, 500);
+    }
+  }
+
+  // Setup all videos
+  setupVideoOnly('high-video');
+  setupVideoWithTimer('yolo-video', 'yolo-timer');
+  setupVideoWithTimer('llm-video', 'llm-timer');
+  setupVideoWithTimer('hybrid-video', 'hybrid-timer');
+
+  // Play all videos after setup
+  playAllVideos();
+});
+
+// Force play on ANY user interaction
+['click', 'touchstart', 'keydown', 'mousemove'].forEach(eventType => {
+  document.addEventListener(eventType, function() {
+    console.log('User interaction detected, playing all videos...');
+    playAllVideos();
+  }, { once: true });
+});
+
+// Also try when window fully loads
+window.addEventListener('load', function() {
+  console.log('Window loaded, playing all videos...');
+  playAllVideos();
+});
+</script>
+
+</body>
+</html>

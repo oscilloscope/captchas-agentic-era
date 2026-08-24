@@ -1,0 +1,1405 @@
+
+{
+  "sessions": [
+    {
+      
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 6,
+      "vlm_cell_calls": 3,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 5,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 33,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 5,
+      "vlm_cell_calls": 4,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 8,
+      "vlm_cell_calls": 1,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 7,
+      "vlm_cell_calls": 2,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 6,
+      "vlm_cell_calls": 3,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 2,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 11,
+      "vlm_cell_calls": 7,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 9,
+      "vlm_cell_calls": 18,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 20,
+      "vlm_cell_calls": 16,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 15,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 6,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 3,
+      "segmentation_analyses": 5,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 22,
+      "vlm_cell_calls": 5,
+      "yolo_grid_calls": 5,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 15,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 19,
+      "vlm_cell_calls": 17,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 26,
+      "vlm_cell_calls": 10,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 18,
+      "vlm_cell_calls": 9,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 14,
+      "vlm_cell_calls": 22,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 4,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 9,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 53,
+      "vlm_cell_calls": 28,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 18,
+      "vlm_cell_calls": 9,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 9,
+      "vlm_cell_calls": 27,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 20,
+      "vlm_cell_calls": 7,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 3,
+      "classification_analyses": 8,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 8,
+      "yolo_cell_calls": 68,
+      "vlm_cell_calls": 4,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 15,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 23,
+      "vlm_cell_calls": 4,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 5,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 5,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 30,
+      "vlm_cell_calls": 15,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 1,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 5,
+      "vlm_cell_calls": 4,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 3,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 3,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 15,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 2,
+      "classification_analyses": 5,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 23,
+      "vlm_cell_calls": 22,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 5,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 5,
+      "yolo_cell_calls": 45,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 5,
+      "vlm_cell_calls": 4,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 18,
+      "vlm_cell_calls": 18,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 18,
+      "vlm_cell_calls": 18,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 9,
+      "vlm_cell_calls": 18,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 2,
+      "classification_analyses": 4,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 17,
+      "vlm_cell_calls": 19,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 15,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 13,
+      "vlm_cell_calls": 14,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 20,
+      "vlm_cell_calls": 7,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 9,
+      "distinct_dynamic_puzzles": 2,
+      "classification_analyses": 11,
+      "segmentation_analyses": 5,
+      "dynamic_analyses": 7,
+      "yolo_cell_calls": 42,
+      "vlm_cell_calls": 57,
+      "yolo_grid_calls": 5,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 3
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 2,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 10,
+      "vlm_cell_calls": 8,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 5,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 5,
+      "yolo_cell_calls": 20,
+      "vlm_cell_calls": 25,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 6,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 6,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 5,
+      "vlm_cell_calls": 4,
+      "yolo_grid_calls": 6,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 23,
+      "vlm_cell_calls": 4,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 20,
+      "vlm_cell_calls": 16,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 6,
+      "vlm_cell_calls": 3,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 4,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 18,
+      "vlm_cell_calls": 18,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 5,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 5,
+      "yolo_cell_calls": 31,
+      "vlm_cell_calls": 14,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 24,
+      "vlm_cell_calls": 3,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 17,
+      "vlm_cell_calls": 10,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 2,
+      "classification_analyses": 5,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 28,
+      "vlm_cell_calls": 17,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 15,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 4,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 3,
+      "vlm_grid_calls": 1,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 6,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 5,
+      "yolo_cell_calls": 36,
+      "vlm_cell_calls": 18,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 4,
+      "vlm_cell_calls": 5,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 6,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 5,
+      "yolo_cell_calls": 31,
+      "vlm_cell_calls": 23,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 3,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 3,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 23,
+      "vlm_cell_calls": 4,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 6,
+      "vlm_cell_calls": 3,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 36,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 20,
+      "vlm_cell_calls": 16,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 23,
+      "vlm_cell_calls": 13,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 5,
+      "vlm_cell_calls": 4,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 15,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 21,
+      "vlm_cell_calls": 6,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 22,
+      "vlm_cell_calls": 14,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 5,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 29,
+      "vlm_cell_calls": 16,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 19,
+      "vlm_cell_calls": 8,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 22,
+      "vlm_cell_calls": 14,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 3,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 1,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 3,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 3,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 7,
+      "vlm_cell_calls": 2,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 18,
+      "vlm_cell_calls": 9,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 5,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 6,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 38,
+      "vlm_cell_calls": 16,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 15,
+      "vlm_cell_calls": 21,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 6,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 7,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 7,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 8,
+      "distinct_dynamic_puzzles": 2,
+      "classification_analyses": 13,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 44,
+      "vlm_cell_calls": 73,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 4
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 3,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 6,
+      "vlm_cell_calls": 3,
+      "yolo_grid_calls": 3,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 1,
+      "segmentation_analyses": 3,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 6,
+      "vlm_cell_calls": 3,
+      "yolo_grid_calls": 3,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 12,
+      "vlm_cell_calls": 15,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 28,
+      "vlm_cell_calls": 8,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 4,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 28,
+      "vlm_cell_calls": 8,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 3,
+      "distinct_dynamic_puzzles": 2,
+      "classification_analyses": 4,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 24,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 5,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 5,
+      "yolo_cell_calls": 33,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 6,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 4,
+      "yolo_cell_calls": 42,
+      "vlm_cell_calls": 12,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 4,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 8,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 57,
+      "vlm_cell_calls": 15,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 1
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 1,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 24,
+      "vlm_cell_calls": 3,
+      "yolo_grid_calls": 1,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 22,
+      "vlm_cell_calls": 5,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 12,
+      "vlm_cell_calls": 15,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+
+      "distinct_puzzles": 2,
+      "distinct_dynamic_puzzles": 0,
+      "classification_analyses": 0,
+      "segmentation_analyses": 2,
+      "dynamic_analyses": 0,
+      "yolo_cell_calls": 0,
+      "vlm_cell_calls": 0,
+      "yolo_grid_calls": 2,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    },
+    {
+ 
+      "distinct_puzzles": 1,
+      "distinct_dynamic_puzzles": 1,
+      "classification_analyses": 3,
+      "segmentation_analyses": 0,
+      "dynamic_analyses": 3,
+      "yolo_cell_calls": 22,
+      "vlm_cell_calls": 5,
+      "yolo_grid_calls": 0,
+      "vlm_grid_calls": 0,
+      "successes": 1,
+      "reloads": 0
+    }
+  ]
+}

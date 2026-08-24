@@ -1,0 +1,25 @@
+{
+  "model": "Hybrid (YOLOv8x-Mask + VLM)",
+  "model_selection": {
+    "bicycle": "yolo",
+    "bus": "yolo",
+    "fire hydrant": "yolo",
+    "motorcycle": "yolo",
+    "traffic light": "yolo",
+    "crosswalk": "vlm",
+    "stairs": "vlm",
+    "taxi": "vlm"
+  },
+  "confusion_matrix": {
+    "tp": 1050,
+    "fp": 176,
+    "fn": 195,
+    "tn": 1843
+  },
+  "metrics": {
+    "accuracy": 0.8863357843137255,
+    "precision": 0.8564437194127243,
+    "recall": 0.8433734939759037,
+    "f1": 0.84985835694051
+  }
+}

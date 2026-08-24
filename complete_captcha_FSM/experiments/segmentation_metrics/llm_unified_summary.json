@@ -1,0 +1,19 @@
+{
+  "model": "LLM",
+  "total_puzzles": 204,
+  "successful": 204,
+  "overall_metrics": {
+    "tp": 997,
+    "fp": 352,
+    "fn": 248,
+    "tn": 1667,
+    "precision": 0.7390659747961453,
+    "recall": 0.8008032128514057,
+    "accuracy": 0.8161764705882353,
+    "f1": 0.7686969930609099
+  },
+  "timing": {
+    "total_elapsed": 759.0623211860657,
+    "avg_inference": 3.3654573442889193
+  }
+}

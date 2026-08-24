@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# Documents
+*.pdf
+
+# Model weights downloaded automatically on first run
+yolov8x-seg.pt

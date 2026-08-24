@@ -1,0 +1,30 @@
+{
+  "model": "yolov8m-seg",
+  "total_puzzles": 204,
+  "successful": 204,
+  "puzzles_with_masks": 170,
+  "bbox_metrics": {
+    "tp": 994,
+    "fp": 316,
+    "fn": 251,
+    "tn": 1703,
+    "precision": 0.7587786259541984,
+    "recall": 0.7983935742971887,
+    "accuracy": 0.8262867647058824,
+    "f1": 0.7780821917808218
+  },
+  "mask_metrics": {
+    "tp": 951,
+    "fp": 149,
+    "fn": 294,
+    "tn": 1870,
+    "precision": 0.8645454545454545,
+    "recall": 0.763855421686747,
+    "accuracy": 0.8642769607843137,
+    "f1": 0.8110874200426439
+  },
+  "timing": {
+    "total_elapsed": 35.814120054244995,
+    "avg_inference": 0.03314504436418122
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "bicycle": {
+    "best_model": "VLM",
+    "yolo_f1": 0.7068493150684931,
+    "vlm_f1": 0.7101449275362318,
+    "best_f1": 0.7101449275362318,
+    "improvement": 0.0032956124677386844
+  },
+  "bus": {
+    "best_model": "YOLOv8x-Mask",
+    "yolo_f1": 0.9011494252873563,
+    "vlm_f1": 0.8254716981132075,
+    "best_f1": 0.9011494252873563,
+    "improvement": 0.07567772717414878
+  },
+  "crosswalk": {
+    "best_model": "VLM",
+    "yolo_f1": 0,
+    "vlm_f1": 0.6846846846846846,
+    "best_f1": 0.6846846846846846,
+    "improvement": 0.6846846846846846
+  },
+  "fire hydrant": {
+    "best_model": "YOLOv8x-Mask",
+    "yolo_f1": 0.90625,
+    "vlm_f1": 0.7560975609756098,
+    "best_f1": 0.90625,
+    "improvement": 0.15015243902439024
+  },
+  "motorcycle": {
+    "best_model": "YOLOv8x-Mask",
+    "yolo_f1": 0.8978328173374612,
+    "vlm_f1": 0.792233009708738,
+    "best_f1": 0.8978328173374612,
+    "improvement": 0.10559980762872323
+  },
+  "stairs": {
+    "best_model": "VLM",
+    "yolo_f1": 0,
+    "vlm_f1": 0.7516778523489933,
+    "best_f1": 0.7516778523489933,
+    "improvement": 0.7516778523489933
+  },
+  "taxi": {
+    "best_model": "VLM",
+    "yolo_f1": 0,
+    "vlm_f1": 0.8571428571428571,
+    "best_f1": 0.8571428571428571,
+    "improvement": 0.8571428571428571
+  },
+  "traffic light": {
+    "best_model": "YOLOv8x-Mask",
+    "yolo_f1": 0.8846153846153847,
+    "vlm_f1": 0.7351351351351352,
+    "best_f1": 0.8846153846153847,
+    "improvement": 0.14948024948024952
+  }
+}
